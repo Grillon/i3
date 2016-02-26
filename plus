@@ -1,0 +1,15 @@
+action=$1
+for ctrl in Master Headphone Speaker;
+do
+case $action in 
+toggle)
+amixer -c 1 -q sset $ctrl toggle 
+;;
+up)
+amixer -c 1 set $ctrl 3%+ unmute
+;;
+down)
+amixer -c 1 set $ctrl 3%- unmute
+;;
+esac
+done
