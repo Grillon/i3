@@ -17,9 +17,13 @@ i3s dot files of my thinkpad with a I<clean installer>
 
 =over 6
 
-=item treat all dependencies of py3status
+=item *
 
-=item guide installation of dependencies
+treat all dependencies of py3status
+
+=item * 
+
+guide installation of dependencies
 
 =back
 
