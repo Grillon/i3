@@ -1,0 +1,26 @@
+=pod
+
+=head1 Name
+
+i3conf
+
+=head1 Description
+
+i3s dot files of my thinkpad with a I<clean installer>
+
+=head1 Usage
+
+ change i3config destination in ./i3variables_for_template
+ then tape ./i3installer.sh
+
+=head1 TODO
+
+=over 6
+
+=item treat all dependencies of py3status
+
+=item guide installation of dependencies
+
+=head1 Author
+
+Grillon
