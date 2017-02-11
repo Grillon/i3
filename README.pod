@@ -21,6 +21,10 @@ i3s dot files of my thinkpad with a I<clean installer>
 
 =item guide installation of dependencies
 
+=back
+
 =head1 Author
 
 Grillon
+
+=cut
