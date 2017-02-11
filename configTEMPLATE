@@ -74,7 +74,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 #screenshot
-bindsym Print exec scrot -e 'mv $f /home/thierry/Images/'
+bindsym Print exec scrot -e 'mv $f __I3SCREENSHOTDIR__'
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -147,11 +147,11 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-bindsym XF86AudioLowerVolume exec /home/thierry/.config/i3/plus down
-bindsym XF86AudioRaiseVolume exec /home/thierry/.config/i3/plus up
+bindsym XF86AudioLowerVolume exec __I3HOMEDIR__plus down
+bindsym XF86AudioRaiseVolume exec __I3HOMEDIR__plus up
 #bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec /home/thierry/.config/i3/plus toggle
+bindsym XF86AudioMute exec __I3HOMEDIR__plus toggle
 
 
 bindsym $mod+r mode "resize"
@@ -159,5 +159,5 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command py3status -c /home/thierry/.config/i3/i3status.conf
+        status_command py3status -c __I3HOMEDIR__i3status.conf
 }
